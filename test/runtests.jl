@@ -29,6 +29,9 @@ end
 @test Trop{Max}(2) * inf() == inf()
 @test Trop{Min}(2) * inf(Min) == inf(Min)
 
+@test Trop(4)^4 == Trop(16)
+@test -Trop(4) == Trop(4)
+
 @test (Trop(3.1) == Trop(3.0)) == false
 @test (Trop{Max}(3) == Trop{Min}(3)) == false
 
@@ -41,3 +44,5 @@ end
 @test string(Trop(5.2)) == "5.2"
 @test string(inf(Min)) == "-∞"
 @test string(inf(Max)) == "∞"
+
+@test promote_type(Trop{Max, Int}, Trop{Max, Float64}) == Trop{Max, Float64}

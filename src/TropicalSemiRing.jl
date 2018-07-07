@@ -59,7 +59,7 @@ function (*)(a::Trop{MM, T}, b::Trop{MM, T}) where {MM<:MinMax, T<:Real}
 end
 
 function (^)(a::Trop{MM, T}, p::Integer) where {MM<:MinMax, T<:Real}
-    Tropical(convert(T, p) * a.val, isinf(a))
+    Trop(convert(T, p) * a.val, isinf(a))
 end
 
 function Base.isequal(a::Trop{M, T}, b::Trop{M, S}) where {M, S, T}
