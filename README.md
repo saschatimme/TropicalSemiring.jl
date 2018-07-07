@@ -1,6 +1,6 @@
 # TropicalSemiRing
 [![Build Status](https://travis-ci.org/saschatimme/TropicalSemiRing.jl.svg?branch=master)](https://travis-ci.org/saschatimme/TropicalSemiRing.jl)
-[![Codecov branch][codecov-img]]
+![Codecov branch][codecov-img]
 
 This small package defines the tropical semi-ring with either the max or min convention.
 With the max convention this is the semi-ring (ℝ ∪ {-∞}, ⊕, ⊙) where
