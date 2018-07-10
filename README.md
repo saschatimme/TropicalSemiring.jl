@@ -1,4 +1,4 @@
-# TropicalSemiRing
+# TropicalSemiring
 
 This small package defines the tropical semi-ring with either the max or min convention.
 With the max convention this is the semi-ring (ℝ ∪ {-∞}, ⊕, ⊙) where

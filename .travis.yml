@@ -27,9 +27,9 @@ matrix:
 
 ## uncomment the following lines to override the default test script
 #script:
-#  - julia -e 'Pkg.clone(pwd()); Pkg.build("TropicalSemiRing"); Pkg.test("TropicalSemiRing"; coverage=true)'
+#  - julia -e 'Pkg.clone(pwd()); Pkg.build("TropicalSemiring"); Pkg.test("TropicalSemiring"; coverage=true)'
 after_success:
   # push coverage results to Coveralls
-  # - julia -e 'cd(Pkg.dir("TropicalSemiRing")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
+  # - julia -e 'cd(Pkg.dir("TropicalSemiring")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
   # push coverage results to Codecov
-  - julia -e 'cd(Pkg.dir("TropicalSemiRing")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+  - julia -e 'cd(Pkg.dir("TropicalSemiring")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'

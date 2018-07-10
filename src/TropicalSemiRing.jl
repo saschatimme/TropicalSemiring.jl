@@ -1,6 +1,6 @@
 __precompile__()
 
-module TropicalSemiRing
+module TropicalSemiring
 
 export Trop, Min, Max, inf
 
