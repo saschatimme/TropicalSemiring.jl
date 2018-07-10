@@ -1,4 +1,6 @@
 # TropicalSemiring
+[![Build Status](https://travis-ci.org/saschatimme/TropicalSemiring.jl.svg?branch=master)](https://travis-ci.org/saschatimme/TropicalSemiring.jl)
+![Codecov branch][codecov-img]
 
 This small package defines the tropical semi-ring with either the max or min convention.
 With the max convention this is the semi-ring (ℝ ∪ {-∞}, ⊕, ⊙) where
@@ -41,3 +43,6 @@ julia> Trop{Min}(2) + inf(Min)
 julia> inf() isa Trop{Max}
 true
 ```
+
+[codecov-img]: http://codecov.io/github/saschatimme/TropicalSemiring.jl/coverage.svg?branch=master
+[codecov-url]: http://codecov.io/github/saschatimme/TropicalSemiring.jl?branch=master
